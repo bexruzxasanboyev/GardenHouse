@@ -1,8 +1,14 @@
+import { useEffect } from 'react'
 import '../assets/style/header.css'
 import HeaderLogo from '../assets/images/header/header__logo.svg'
-import '../js/app.js'
+import { initHamburgerMenu } from '../js/app.js'
 
 const Header = () => {
+  useEffect(() => {
+    const cleanup = initHamburgerMenu()
+    return cleanup
+  }, [])
+
   return (
     <header className='header'>
       <div className="header__container container">
@@ -10,6 +16,9 @@ const Header = () => {
           <img src={HeaderLogo} alt="img" className="header__logo" />
         </a>
         <div className='header__wrapper'>
+          <button className='menu__close' aria-label='Close menu'>
+            <i className="fa-solid fa-xmark"></i>
+          </button>
           <ul className="nav__list">
             <li className="nav__item">
               <a href="#" className="nav__link">Home</a>
@@ -32,8 +41,9 @@ const Header = () => {
             <button className='butttons__btn__green'>Sing Up</button>
           </div>
         </div>
-        <button className='hamburger__menu'>
-          <i class="fa-solid fa-bars"></i>
+        <div className='menu__overlay'></div>
+        <button className='hamburger__menu' aria-label='Open menu'>
+          <i className="fa-solid fa-bars"></i>
         </button>
       </div>
     </header>
