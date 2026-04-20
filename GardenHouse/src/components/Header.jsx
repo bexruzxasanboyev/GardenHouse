@@ -18,7 +18,6 @@ const Header = () => {
         <div className='header__wrapper'>
           <div className='menu__top'>
             <a href="#" className='menu__logo'>
-              <img src={HeaderLogo} alt="Plant logo" />
               <span>Plant</span>
             </a>
             <button className='menu__close' aria-label='Close menu'>
