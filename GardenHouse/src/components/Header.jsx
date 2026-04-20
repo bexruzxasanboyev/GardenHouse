@@ -16,9 +16,15 @@ const Header = () => {
           <img src={HeaderLogo} alt="img" className="header__logo" />
         </a>
         <div className='header__wrapper'>
-          <button className='menu__close' aria-label='Close menu'>
-            <i className="fa-solid fa-xmark"></i>
-          </button>
+          <div className='menu__top'>
+            <a href="#" className='menu__logo'>
+              <img src={HeaderLogo} alt="Plant logo" />
+              <span>Plant</span>
+            </a>
+            <button className='menu__close' aria-label='Close menu'>
+              <i className="fa-solid fa-xmark"></i>
+            </button>
+          </div>
           <ul className="nav__list">
             <li className="nav__item">
               <a href="#" className="nav__link">Home</a>

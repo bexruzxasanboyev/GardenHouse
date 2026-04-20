@@ -113,6 +113,10 @@
   display: none;
 }
 
+.menu__top {
+  display: none;
+}
+
 .menu__overlay {
   display: none;
 }
@@ -161,15 +165,39 @@
     gap: 12px;
   }
 
+  .menu__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .menu__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #1A1A1A;
+    font-family: DM Sans, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .menu__logo img {
+    width: 28px;
+    height: 28px;
+  }
+
   .menu__close {
     display: block;
-    position: absolute;
-    top: 16px;
-    right: 16px;
     font-size: 22px;
     border: none;
     background-color: transparent;
     cursor: pointer;
+  }
+
+  .header__wrapper {
+    padding-top: 20px;
   }
 
   .menu__overlay {
