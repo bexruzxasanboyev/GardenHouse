@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: Nunito;
+  font-family: DM Sans;
+}
+
+.plant {
+  padding-top: 150px;
+  padding-bottom: 64px;
+}
+
+.plant__container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.plant__row {
+  max-width: 369px;
+  width: 100%;
+}
+
+.plant__title {
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: clamp(26px, 8vw, 35px);
+  line-height: 100%;
+  margin-bottom: 37px;
+}
+
+.plant__text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #4A4A4A;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.plant__text:hover .arrow {
+  transform: translateX(5px);
+}
+
+.plant__images {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 701px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.images__box {
+  padding: 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-1 {
+  background-color: #F6EDE8;
+  height: 207px;
+}
+
+.box-2 {
+  background-color: #F0F1F6;
+  max-width: 217px;
+  width: 100%;
+  height: 207px;
+}
+
+.images__box img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.images__box:hover img {
+  transform: scale(1.15);
+}
+
+@media (max-width:1240px) {
+  .plant {
+    padding-top: 60px;
+  }
+
+  .plant__container {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .plant__images {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: 701px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width:500px) {
+  .plant {
+    padding-top: 250px;
+  }
+
+  .plant__images {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: 701px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .box-1 {
+    background-color: #F6EDE8;
+    height: 150px;
+  }
+
+  .box-2 {
+    background-color: #F0F1F6;
+    max-width: 217px;
+    width: 100%;
+    height: 150px;
+  }
+}

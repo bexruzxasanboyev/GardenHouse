@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: Nunito;
+  font-family: DM Sans;
+}
+
+.follow {
+  padding-top: 38px;
+  padding-bottom: 64px;
+}
+
+.follow__title {
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: clamp(20px, 6vw, 48px);
+  line-height: 57px;
+  color: #1A1A1A;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.follow__text {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  max-width: 544px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.follow__images {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.follow__img {
+  max-width: 220px;
+  width: 100%;
+}
+
+@media (max-width:400px) {
+  .follow {
+    padding-top: 1px;
+    padding-bottom: 64px;
+  }
+}

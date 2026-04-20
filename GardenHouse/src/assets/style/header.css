@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: Nunito;
+  font-family: DM Sans;
+}
+
+.container  {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding-top: 22px;
+  padding-bottom: 0;
+}
+
+.header__container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 750px;
+  width: 100%;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  list-style: none;
+}
+
+.nav__link {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: none;
+  color: #1A1A1A;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.butttons__btn {
+  font-family: DM Sans, sans-serif;
+  font-size: 16px;
+  line-height: 100%;
+  color: #1A1A1A;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 12px 16px;
+  transition: all 0.3s;
+}
+
+.butttons__btn:hover {
+  background-color: #066F14;
+  color: white;
+  border-radius: 4px;
+}
+
+.butttons__btn__green {
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+  line-height: 100%;
+  padding: 12px 16px;
+  background-color: #066F14;
+  border: 1px solid white;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.butttons__btn__green:hover {
+  background-color: white;
+  color: #066F14;
+  border: 1px solid #066F14;
+}
+
+.hamburger__menu {
+  display: none;
+}
+
+@media (max-width:742px) {
+  .nav__list {
+    display: none;
+  }
+
+  .header__buttons {
+    display: none;
+  }
+
+  .hamburger__menu {
+    display: block;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}

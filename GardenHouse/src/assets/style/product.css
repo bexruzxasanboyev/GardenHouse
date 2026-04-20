@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: Nunito;
+  font-family: DM Sans;
+}
+
+.product {
+  padding-top: 66px;
+  padding-bottom: 64px;
+}
+
+.product__title {
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #1A1A1A;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.product__list {
+  max-width: 268px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 24px;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.product__link {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: clamp(12px, 4vw, 16px);
+  line-height: 100%;
+  text-decoration: none;
+  color: #4A4A4A;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.product__link:hover {
+  color: #066F14;
+}
+
+.product__inner {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 45px !important;
+}
+
+.inner__wrapper {
+  max-width: 270px;
+  width: 100%;
+  height: 283px;
+  background-color: #EAF2E5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper__img {
+  max-width: 160px;
+  width: 100%;
+  height: 153px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.inner__row__col {
+  padding-left: 32px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product__span {
+  font-family: Nunito;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.product__btn {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #066F14;
+  line-height: 100%;
+  max-width: 131px;
+  width: 100%;
+  padding: 16px 0;
+  border: 1px solid #066F14;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 56px;
+}
+
+.product__btn:hover {
+  background-color: white;
+  color: #066F14;
+  border: 1px solid #066F14;
+}
+
+.product__inner .swiper-pagination {
+  bottom: 10px !important;
+  z-index: 10 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #066F14 !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet {
+  background: #C4C4C4;
+  opacity: 1;
+}
+@media (max-width:400px) {
+  .product {
+    padding-bottom: 10px;
+  }
+}

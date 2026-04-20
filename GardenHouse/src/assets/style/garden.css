@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: Nunito;
+  font-family: DM Sans;
+}
+
+.garden {
+  padding-top: 66px;
+  padding-bottom: 64px;
+}
+
+.garden__container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.garden__logo {
+  max-width: 516px;
+  width: 100%;
+}
+
+.garden__inner {
+  max-width: 504px;
+  width: 100%;
+}
+
+.garden__text {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #066F14;
+  margin-bottom: 12px;
+}
+
+.garden__title {
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: clamp(23px, 6vw, 35px);
+  line-height: 40px;
+  color: #1A1A1A;
+  max-width: 469px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.garden__text__center {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: clamp(12px, 4vw, 14px);
+  line-height: 160%;
+  color: #4A4A4A;
+  margin-bottom: 16px;
+}
+
+.garden__text__bottom {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: clamp(12px, 4vw, 13px);
+  line-height: 160%;
+  color: #4A4A4A;
+  margin-bottom: 36px;
+}
+
+.garden__buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.garden__btn {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #FFFFFF;
+  max-width: 155px;
+  width: 100%;
+  padding: 16px 0;
+  background-color: #066F14;
+  border: 1px solid #066F14;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.garden__btn:hover {
+  background-color: white;
+  color: #066F14;
+  border: 1px solid #066F14;
+}
+
+@media (max-width:1120px) {
+  .garden {
+    padding-top: 66px;
+    padding-bottom: 64px;
+  }
+
+  .garden__container {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width:500px) {
+  .garden__buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .garden__btn {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FFFFFF;
+    max-width: 400px;
+    width: 100%;
+    padding: 16px 0;
+    background-color: #066F14;
+    border: 1px solid #066F14;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+}
